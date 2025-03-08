@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7108E04E2D6704180097F913 /* BusNow */ = {
+		71438EAC2D7C8ED50095BE1E /* BusNow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BusNow;
 			sourceTree = "<group>";
@@ -32,7 +32,7 @@
 		7108E0432D6704180097F913 = {
 			isa = PBXGroup;
 			children = (
-				7108E04E2D6704180097F913 /* BusNow */,
+				71438EAC2D7C8ED50095BE1E /* BusNow */,
 				7108E04D2D6704180097F913 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7108E04E2D6704180097F913 /* BusNow */,
+				71438EAC2D7C8ED50095BE1E /* BusNow */,
 			);
 			name = BusNow;
 			packageProductDependencies = (
