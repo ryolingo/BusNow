@@ -6,14 +6,65 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		71438EC42D7D3DFD0095BE1E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71438EC32D7D3DFD0095BE1E /* WidgetKit.framework */; };
+		71438EC62D7D3DFD0095BE1E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71438EC52D7D3DFD0095BE1E /* SwiftUI.framework */; };
+		71438ED72D7D3DFF0095BE1E /* BusNowWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 71438EC12D7D3DFD0095BE1E /* BusNowWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71438ED52D7D3DFF0095BE1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7108E0442D6704180097F913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71438EC02D7D3DFD0095BE1E;
+			remoteInfo = BusNowWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71438EDC2D7D3DFF0095BE1E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				71438ED72D7D3DFF0095BE1E /* BusNowWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7108E04C2D6704180097F913 /* BusNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71438EC12D7D3DFD0095BE1E /* BusNowWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusNowWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		71438EC32D7D3DFD0095BE1E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		71438EC52D7D3DFD0095BE1E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		71438ED82D7D3DFF0095BE1E /* Exceptions for "BusNowWidget" folder in "BusNowWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 71438EC02D7D3DFD0095BE1E /* BusNowWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		71438EAC2D7C8ED50095BE1E /* BusNow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BusNow;
+			sourceTree = "<group>";
+		};
+		71438EC72D7D3DFD0095BE1E /* BusNowWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				71438ED82D7D3DFF0095BE1E /* Exceptions for "BusNowWidget" folder in "BusNowWidgetExtension" target */,
+			);
+			path = BusNowWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +77,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71438EBE2D7D3DFD0095BE1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71438EC62D7D3DFD0095BE1E /* SwiftUI.framework in Frameworks */,
+				71438EC42D7D3DFD0095BE1E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				71438EAC2D7C8ED50095BE1E /* BusNow */,
+				71438EC72D7D3DFD0095BE1E /* BusNowWidget */,
+				71438EC22D7D3DFD0095BE1E /* Frameworks */,
 				7108E04D2D6704180097F913 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +103,18 @@
 			isa = PBXGroup;
 			children = (
 				7108E04C2D6704180097F913 /* BusNow.app */,
+				71438EC12D7D3DFD0095BE1E /* BusNowWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		71438EC22D7D3DFD0095BE1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71438EC32D7D3DFD0095BE1E /* WidgetKit.framework */,
+				71438EC52D7D3DFD0095BE1E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +127,12 @@
 				7108E0482D6704180097F913 /* Sources */,
 				7108E0492D6704180097F913 /* Frameworks */,
 				7108E04A2D6704180097F913 /* Resources */,
+				71438EDC2D7D3DFF0095BE1E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				71438ED62D7D3DFF0095BE1E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				71438EAC2D7C8ED50095BE1E /* BusNow */,
@@ -69,6 +143,28 @@
 			productName = BusNow;
 			productReference = 7108E04C2D6704180097F913 /* BusNow.app */;
 			productType = "com.apple.product-type.application";
+		};
+		71438EC02D7D3DFD0095BE1E /* BusNowWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71438ED92D7D3DFF0095BE1E /* Build configuration list for PBXNativeTarget "BusNowWidgetExtension" */;
+			buildPhases = (
+				71438EBD2D7D3DFD0095BE1E /* Sources */,
+				71438EBE2D7D3DFD0095BE1E /* Frameworks */,
+				71438EBF2D7D3DFD0095BE1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				71438EC72D7D3DFD0095BE1E /* BusNowWidget */,
+			);
+			name = BusNowWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = BusNowWidgetExtension;
+			productReference = 71438EC12D7D3DFD0095BE1E /* BusNowWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +177,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					7108E04B2D6704180097F913 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					71438EC02D7D3DFD0095BE1E = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -100,12 +199,20 @@
 			projectRoot = "";
 			targets = (
 				7108E04B2D6704180097F913 /* BusNow */,
+				71438EC02D7D3DFD0095BE1E /* BusNowWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7108E04A2D6704180097F913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71438EBF2D7D3DFD0095BE1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +229,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71438EBD2D7D3DFD0095BE1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71438ED62D7D3DFF0095BE1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71438EC02D7D3DFD0095BE1E /* BusNowWidgetExtension */;
+			targetProxy = 71438ED52D7D3DFF0095BE1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7108E0582D6704190097F913 /* Debug */ = {
@@ -302,6 +424,60 @@
 			};
 			name = Release;
 		};
+		71438EDA2D7D3DFF0095BE1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZTPRKK94J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusNowWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BusNowWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryota.BusNow.BusNowWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71438EDB2D7D3DFF0095BE1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZTPRKK94J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusNowWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BusNowWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryota.BusNow.BusNowWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +495,15 @@
 			buildConfigurations = (
 				7108E05B2D6704190097F913 /* Debug */,
 				7108E05C2D6704190097F913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71438ED92D7D3DFF0095BE1E /* Build configuration list for PBXNativeTarget "BusNowWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71438EDA2D7D3DFF0095BE1E /* Debug */,
+				71438EDB2D7D3DFF0095BE1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
